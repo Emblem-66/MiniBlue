@@ -15,7 +15,6 @@ gnome-terminal
 gnome-terminal-nautilus
 noopenh264
 --install=distrobox
---install=ffmpegthumbnailer
 --install=adw-gtk3-theme
 --install=morewaita-icon-theme
 --install=system76-scheduler
