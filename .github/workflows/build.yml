@@ -1,0 +1,20 @@
+name: MiniBlue
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 9 * * *'
+  workflow_dispatch:
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@main
+    - name: Login to GitHub Container Registry
+      run: podman login ghcr.io -u emblem-66 -p ${{ secrets.GITHUB_TOKEN }}
+    - name: Build MiniBlue Image
+      run: podman build -f Containerfile -t ghcr.io/emblem-66/miniblue:latest
+    - name: Push MiniBlue Image
+      run: podman push ghcr.io/emblem-66/miniblue:latest
