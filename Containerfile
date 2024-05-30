@@ -1,4 +1,4 @@
-FROM quay.io/fedora-ostree-desktops/base:40
+FROM quay.io/fedora/fedora-silverblue:latest
 COPY rootfs/ /
 RUN rpm-ostree override remove $(< /tmp/base-packages)
 RUN rpm-ostree cleanup -m \
