@@ -3,7 +3,6 @@ yelp
 yelp-xsl
 yelp-libs
 gnome-tour
-gnome-classic-session-xsession
 gnome-session-xsession
 noopenh264
 --install=distrobox
