@@ -3,9 +3,19 @@ yelp
 yelp-xsl
 yelp-libs
 gnome-tour
+gnome-shell-extension-apps-menu
+gnome-shell-extension-launch-new-instance
+gnome-shell-extension-places-menu
+gnome-shell-extension-window-list
+gnome-shell-extension-background-logo
+gnome-classic-session
+gnome-classic-session-xsession
 gnome-session-xsession
+gnome-terminal
+gnome-terminal-nautilus
 noopenh264
 --install=distrobox
+--install=ffmpegthumbnailer
 --install=adw-gtk3-theme
 --install=morewaita-icon-theme
 --install=system76-scheduler
@@ -19,4 +29,4 @@ noopenh264
 --install=adobe-source-sans-pro-fonts
 --install=rsms-inter-fonts
 --install=cascadia-code-fonts
-
+--install=gnome-console
