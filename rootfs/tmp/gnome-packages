@@ -1,6 +1,5 @@
 toolbox
 gnome-tour
-gnome-session-xsession
 noopenh264
 --install=gnome-shell
 --install=gdm
