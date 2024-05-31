@@ -1,9 +1,6 @@
-#FROM quay.io/fedora/fedora-silverblue:latest
-FROM quay.io/fedora-ostree-desktops/base:40
+FROM quay.io/fedora/fedora-silverblue:latest
 COPY rootfs/ /
-#RUN rpm-ostree override remove $(< /tmp/base-packages)
-RUN rpm-ostree install gnome-shell gdm nautilus
-RUN rpm-ostree override remove $(< /tmp/gnome-packages)
+RUN rpm-ostree override remove $(< /tmp/base-packages)
 RUN rpm-ostree cleanup -m \
 &&  systemctl enable com.system76.Scheduler.service \
 &&  systemctl enable rpm-ostreed-automatic.timer \
