@@ -2,7 +2,7 @@ FROM quay.io/fedora-ostree-desktops/base:40
 COPY rootfs/ /
 RUN rpm-ostree install \
         gdm \
-        gnome \
+        gnome-shell \
         nautilus \
         distrobox \
         adw-gtk3-theme \
