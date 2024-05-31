@@ -12,7 +12,7 @@ RUN rpm-ostree install \
         gnome-shell-extension-caffeine \
         gnome-shell-extension-dash-to-dock \
         ibm-plex-mono-fonts ibm-plex-sans-fonts ibm-plex-serif-fonts adobe-source-serif-pro-fonts adobe-source-sans-pro-fonts rsms-inter-fonts cascadia-code-fonts \
-        gnome-console \
+        gnome-console
 RUN rpm-ostree override remove \
         toolbox
 RUN rpm-ostree cleanup -m \
