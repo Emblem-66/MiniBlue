@@ -1,5 +1,13 @@
 toolbox
+yelp
+yelp-xsl
+yelp-libs
 gnome-tour
+gnome-classic-session
+gnome-classic-session-xsession
+gnome-session-xsession
+gnome-terminal
+gnome-terminal-nautilus
 noopenh264
 --install=distrobox
 --install=adw-gtk3-theme
