@@ -1,9 +1,6 @@
 toolbox
 gnome-tour
 noopenh264
---install=gnome-shell
---install=gdm
---install=nautilus
 --install=distrobox
 --install=adw-gtk3-theme
 --install=morewaita-icon-theme
