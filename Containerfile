@@ -1,4 +1,5 @@
-FROM quay.io/fedora-ostree-desktops/base:40
+#FROM quay.io/fedora-ostree-desktops/base:40
+FROM quay.io/fedora/fedora:40
 COPY rootfs/ /
 RUN rpm-ostree install \
         gdm \
